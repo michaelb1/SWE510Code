@@ -15,9 +15,10 @@ public class Card
 		this.suit = cardSuit;//initialize cards suit
 		}
 
-	//return String representation of card
+	//return String representation of card. This overrides toString I think.
 	public String toString()
 		{
 		return face + " of " + suit;
 		}
+
 	}

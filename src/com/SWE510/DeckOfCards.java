@@ -12,7 +12,9 @@ public class DeckOfCards
 	private static final int NUMBER_OF_CARDS = 52;
 	private static final SecureRandom randomNumbers = new SecureRandom();
 
-	/**constructor fills deck of cards*/
+	/**
+	 * constructor fills deck of cards
+	 */
 	public DeckOfCards()
 		{
 		String[] faces = { "Ace", "Duece", "Three", "four", "five", "six", "seven",
@@ -25,14 +27,17 @@ public class DeckOfCards
 		currentCard = 0;//first card dealt will be deck[0]
 
 		//populate deck with card objects
-		/*for (int count = 0; count < deck.length; count++)
+		for (int count = 0; count < deck.length; count++)
 			{
 				deck[count]= new Card(faces[count % 13], suits[count / 13]);
-			}*/
+			}
 
 		}
 
-	//shuffle deck of cards with one pass algorith
+	/**
+	 * Shuffle.
+	 */
+//shuffle deck of cards with one pass algorith
 	public void shuffle()
 		{
 		//next call to method dealCard should start at deck[0] again
@@ -51,7 +56,12 @@ public class DeckOfCards
 		}
 		}
 
-	//deal one card
+	/**
+	 * Deal card card.
+	 *
+	 * @return the card
+	 */
+//deal one card
 	public Card dealCard()
 		{
 		//determine if cards remain to be dealt
