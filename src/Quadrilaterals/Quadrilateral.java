@@ -10,10 +10,10 @@ public class Quadrilateral
 	protected Points corner2;
 	protected Points corner3;
 	protected Points corner4;
-	protected int base;
-	protected int topBase;
-	protected int height;
-	protected int area;
+	protected double base;
+	protected double topBase;
+	protected double height;
+	protected double area;
 
 	public void Quadrilateral()
 		{
@@ -40,7 +40,7 @@ public class Quadrilateral
 	// calculates distance between the two points.
 
 
-	public int pointDistance(int pt1, int pt2)
+	public double pointDistance(double pt1, double pt2)
 		{
 		if (((pt1 > 0) && (pt2 > 0)) || ((pt1 < 0) && (pt2 < 0)))
 		{

@@ -6,7 +6,7 @@ package Quadrilaterals;
 public class Parallelogram extends Quadrilateral
 	{
 
-	public void Parallelogram()
+	public  Parallelogram()
 		{
 		this.corner1 = new Points();
 		this.corner2 = new Points();
@@ -16,7 +16,7 @@ public class Parallelogram extends Quadrilateral
 
 	//build constructors to call is needed
 
-	public void Parallelogram(Points point1, Points point2, Points point3, Points point4)
+	public  Parallelogram(Points point1, Points point2, Points point3, Points point4)
 		{
 		this.corner1 = point1;
 		this.corner2 = point2;
@@ -25,10 +25,10 @@ public class Parallelogram extends Quadrilateral
 		this.height = pointDistance(point2.getx(), point3.getx());
 		this.topBase = pointDistance(point1.gety(), point2.gety());
 		this.base = pointDistance(point3.gety(), point4.gety());
-		this.area = calcArea();
+		this.area = getArea();
 		}
 
-	public int calcArea()
+	public double getArea()
 		{
 		return base * height;
 		}

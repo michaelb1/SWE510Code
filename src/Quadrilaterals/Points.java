@@ -5,35 +5,35 @@ package Quadrilaterals;
  */
 public class Points
 	{
-	private int x;
-	private int y;
+	private double x;
+	private double y;
 
 	public Points()
 		{
 		}
 
-	public Points(int x, int y)
+	public Points(double x, double y)
 		{
 		this.x = x;
 		this.y = y;
 		}
 
-	public int gety()
+	public double gety()
 		{
 		return y;
 		}
 
-	public int getx()
+	public double getx()
 		{
 		return x;
 		}
 
-	public void setx(int x)
+	public void setx(double x)
 		{
 		this.x = x;
 		}
 
-	public void sety(int y)
+	public void sety(double y)
 		{
 		this.y = y;
 		}
