@@ -1,34 +1,47 @@
 package Quadrilaterals;
 
-import java.awt.*;
-
 /**
  * Created by mb on 10/12/15.
  */
 public class Points
 	{
-	private double x;
-	private double y;
+	private int x;
+	private int y;
 
-	public void Point(double x, double y)
+	public Points()
+		{
+		}
+
+	public Points(int x, int y)
+		{
 		this.x = x;
-		this.y =
+		this.y = y;
+		}
 
-	public double gety()
+	public int gety()
 		{
 		return y;
 		}
 
-	public void setx(double x)
-		{
-		}
-
-	public double getx()
+	public int getx()
 		{
 		return x;
 		}
 
+	public void setx(int x)
+		{
+		this.x = x;
+		}
+
+	public void sety(int y)
+		{
+		this.y = y;
+		}
+
+
 	@Override
-	public String toString(Point)
-		return String.format ("(" + x + ", " + y + ")");
+	public String toString()
+		{
+		return "(" + this.x + "," + this.y + ")";
+		}
 	}

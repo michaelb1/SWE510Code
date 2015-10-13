@@ -5,4 +5,9 @@ package Quadrilaterals;
  */
 public class Rectangle extends Parallelogram
 	{
+
+		{
+
+		}
+
 	}

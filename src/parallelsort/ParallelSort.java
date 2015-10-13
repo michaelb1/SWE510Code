@@ -1,4 +1,4 @@
-package com.SWE510;
+package parallelsort;
 import java.util.Arrays;
 import java.io.File;
 import java.awt.image.BufferedImage;

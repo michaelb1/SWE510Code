@@ -5,4 +5,9 @@ package Quadrilaterals;
  */
 public class Square extends Parallelogram
 	{
+
+	public void getArea()
+		{
+
+		}
 	}
