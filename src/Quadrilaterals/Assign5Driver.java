@@ -13,20 +13,27 @@ public class Assign5Driver
 
 
 		//clean this up
-		
-		Trapezoid myTrap = new Trapezoid(new Points(3.0,-1.0),new Points(3.0,1.0),new Points(-1.0,2.0),new Points(-1.0,
-		                                                                                                         -3.0));
-		System.out.println(myTrap.toString() + "\nhas an area of " + myTrap.getArea());
+
+		Trapezoid trap = new Trapezoid(new Points(3.0,-1.0),new Points(3.0,1.0),new Points(-1.0,2.0),new Points(-1.0,
+		                                                                                                          -3.0));
+		System.out.println(trap.toString() + "\nhas an area of " + trap.getArea());
+
+
 		System.out.println("");
-		Parallelogram myParallel = new Parallelogram(new Points(5.0,-1.0),new Points(5.0,4.0),new Points(2.0,2.0),new Points(2.0,
+		Parallelogram myPara = new Parallelogram(new Points(5.0,-1.0),new Points(5.0,4.0),new Points(2.0,2.0),new Points(2.0,
 		                                                                                                          -4.0));
-		System.out.println(myParallel.toString() + "\nhas an area of " + myParallel.getArea());
+		System.out.println(myPara.toString() + "\nhas an area of " + myPara.getArea());
+
+
 		System.out.println("");
-		Rectangle myRect = new Rectangle(new Points(5.0,-8.0),new Points(5.0,8.0),new Points(-2.0,8.0),new Points(-2.0,-8.0));
-		System.out.println(myRect.toString() + "\nhas an area of " + myRect.getArea());
+		Rectangle rect = new Rectangle(new Points(5.0,-8.0),new Points(5.0,8.0),new Points(-2.0,8.0),new Points(-2.0,
+		                                                                                                        -8.0));
+		System.out.println(rect.toString() + "\nhas an area of " + rect.getArea());
 		System.out.println("");
-		Square mySquare = new Square(new Points(5.0,-5.0),new Points(5.0,5.0),new Points(-5.0,5.0),new Points(-5.0,-5.0));
-		System.out.println(mySquare.toString() + "\nhas an area of " + mySquare.getArea());
+
+
+		Square square1 = new Square(new Points(5.0,-5.0),new Points(5.0,5.0),new Points(-5.0,5.0),new Points(-5.0,-5.0));
+		System.out.println(square1.toString() + "\nhas an area of " + square1.getArea());
 
 		}
 	}

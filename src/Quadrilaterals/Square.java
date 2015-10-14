@@ -5,7 +5,6 @@ package Quadrilaterals;
  */
 public class Square extends Rectangle
 	{
-	public  Square(){}
 
 	public  Square(Points point1, Points point2, Points point3, Points point4)
 		{

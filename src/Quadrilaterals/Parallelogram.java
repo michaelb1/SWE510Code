@@ -18,6 +18,8 @@ public class Parallelogram extends Quadrilateral
 	//@Override this after building a getArea() in Quadrilateral superclass
 	public double getArea()
 		{
+		setBase();
+		setHeight();
 		return getBase() * getHeight();
 		}
 

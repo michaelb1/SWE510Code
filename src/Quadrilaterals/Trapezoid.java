@@ -17,6 +17,9 @@ public class Trapezoid extends Quadrilateral
 //@Override this after building a getArea() in Quadrilateral superclass
 	public double getArea()
 		{
+			setTopBase();
+			setBase();
+			setHeight();
 		 return ((getTopBase() + getBase()) / 2) * getHeight();
 		}
 
