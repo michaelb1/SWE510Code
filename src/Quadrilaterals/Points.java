@@ -8,9 +8,7 @@ public class Points
 	private double x;
 	private double y;
 
-	public Points()
-		{
-		}
+	public Points(){}
 
 	public Points(double x, double y)
 		{

@@ -11,6 +11,9 @@ public class Assign5Driver
 		//instantiate trapezoid, parrallelogram, rectangle, and square objects
 		//return area of each
 
+
+		//clean this up
+		
 		Trapezoid myTrap = new Trapezoid(new Points(3.0,-1.0),new Points(3.0,1.0),new Points(-1.0,2.0),new Points(-1.0,
 		                                                                                                         -3.0));
 		System.out.println(myTrap.toString() + "\nhas an area of " + myTrap.getArea());
