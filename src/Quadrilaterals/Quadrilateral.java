@@ -1,6 +1,8 @@
 package Quadrilaterals;
 
-/**
+/** The Quadrilateral class is never instantiated. It exists to provide subclasses
+ * Trapezoid, Parallelogram, Rectangle and Square. All of these classes use Quadrilateral
+ * when they are constructed and when determinind their area
  * Created by mb on 10/12/15.
  */
 
@@ -13,6 +15,8 @@ public class Quadrilateral
 	private double base;
 	private double topBase;
 	private double height;
+
+	//no arg constructor
 	public Quadrilateral()
 		{
 		this.corner1 = new Points();
@@ -22,7 +26,7 @@ public class Quadrilateral
 
 		}
 
-	//build constructors to initiate fields
+	// constructor with args
 
 	public Quadrilateral(Points point1, Points point2, Points point3, Points point4)
 		{
@@ -32,7 +36,9 @@ public class Quadrilateral
 		this.corner4 = point4;
 		}
 
-	//methods to assign values to base, top side, and height of shape to be used to determing area.
+	/*methods to assign values to base, top side, and height of shape to be used to determining area.
+	* This method takes in doubles with are x and y values of a point. It figues out the distance between them
+	* so base, topbase, and height can be caluclated. */
 
 	public double pointDistance(double pt1, double pt2)
 		{
@@ -40,18 +46,11 @@ public class Quadrilateral
 		{
 			return Math.abs(Math.max(pt1, pt2) - Math.min(pt1, pt2));
 		}
-		else //if (((pt1 > 0) || (pt2 > 0)) && ((pt1 < 0) || (pt2 < 0)))
+		else
 		{
 			return Math.abs(pt1) + Math.abs(pt2);
 		}
 		}
-
-
-	/*@Override
-	public String toString()
-		{
-		return this.corner1 + ", " + this.corner2 + ", " +this.corner3+ ", " + this.corner4;
-		}*/
 
 	public Points getCorner1()
 		{

@@ -1,6 +1,7 @@
 package Quadrilaterals;
 
-/**
+/**Points is used to represent the four points in each shape that are created as part of the instances of Quadrilateral
+ * subclasses.
  * Created by mb on 10/12/15.
  */
 public class Points
@@ -25,17 +26,6 @@ public class Points
 		{
 		return x;
 		}
-
-	public void setx(double x)
-		{
-		this.x = x;
-		}
-
-	public void sety(double y)
-		{
-		this.y = y;
-		}
-
 
 	@Override
 	public String toString()
