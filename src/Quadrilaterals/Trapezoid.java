@@ -1,5 +1,4 @@
 package Quadrilaterals;
-
 /**
  * Created by mb on 10/12/15.
  */
@@ -23,9 +22,13 @@ public class Trapezoid extends Quadrilateral
 		 return ((getTopBase() + getBase()) / 2) * getHeight();
 		}
 
-	@Override
+	/*@Override
 	public String toString()
 		{
-		return this.getClass() + ": " + getCorner1() + ", " + getCorner2() + ", " + getCorner3() + ", " + getCorner4();
-		}
+		return "Trapezoid instance:\n" + this.getClass() + ": " + getCorner1() + ", " + getCorner2() + ", " +
+				       getCorner3() + ", " + getCorner4();
+		}*/
+
+
+
 	}

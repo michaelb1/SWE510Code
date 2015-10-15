@@ -1,15 +1,11 @@
 package Quadrilaterals;
 
-
-import java.awt.*;
-
 /**
  * Created by mb on 10/12/15.
  */
 
 public class Quadrilateral
 	{
-
 	private Points corner1;
 	private Points corner2;
 	private Points corner3;
@@ -17,7 +13,6 @@ public class Quadrilateral
 	private double base;
 	private double topBase;
 	private double height;
-
 	public Quadrilateral()
 		{
 		this.corner1 = new Points();
@@ -38,8 +33,6 @@ public class Quadrilateral
 		}
 
 	//methods to assign values to base, top side, and height of shape to be used to determing area.
-	// calculates distance between the two points.
-
 
 	public double pointDistance(double pt1, double pt2)
 		{
@@ -53,24 +46,22 @@ public class Quadrilateral
 		}
 		}
 
-	@Override
+
+	/*@Override
 	public String toString()
 		{
 		return this.corner1 + ", " + this.corner2 + ", " +this.corner3+ ", " + this.corner4;
-		}
+		}*/
 
 	public Points getCorner1()
 		{
 		return corner1;
 		}
 
-
-
 	public Points getCorner2()
 		{
 		return corner2;
 		}
-
 
 	public Points getCorner3()
 		{
@@ -87,16 +78,21 @@ public class Quadrilateral
 		return base;
 		}
 
+	public double getTopBase()
+		{
+		return topBase;
+		}
+
+	public double getHeight()
+		{
+		return height;
+		}
+
 	public void setBase()
 		{
 		Points corner3 = getCorner3();
 		Points corner4 = getCorner4();
 		base = pointDistance(corner3.gety(), corner4.gety());
-		}
-
-	public double getTopBase()
-		{
-		return topBase;
 		}
 
 	public void setTopBase()
@@ -106,17 +102,26 @@ public class Quadrilateral
 		topBase = pointDistance(corner1.gety(), corner2.gety());
 		}
 
-	public double getHeight()
-		{
-		return height;
-		}
-
 	public void setHeight()
 		{
 		Points corner2 = getCorner2();
 		Points corner3 = getCorner3();
 		height = pointDistance(corner2.getx(), corner3.getx());
 		}
+
+	@Override
+	public String toString()
+		{
+		String shapeOne = this.getClass().getSimpleName();
+		String shapeTwo = this.getClass().getSuperclass().getSimpleName();
+		//String ShapeThree = this.getClass().getSuperclass().getSuperclass().getSimpleName();
+		//String ShapeFour = this.getClass().getSuperclass().getSuperclass().getSuperclass().getSimpleName();
+
+		return  shapeOne + " class. Subclass of " + shapeTwo + ".\n" +
+				       "Corners: " + getCorner1() + ", " + getCorner2() + ", " + getCorner3() + "," + "," + getCorner4();
+		}
+	// calculates distance between the two points.
+
 
 
 	}
