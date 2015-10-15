@@ -13,6 +13,7 @@ public class Trapezoid extends Quadrilateral
 		{
 		super(point1, point2, point3, point4);
 		}
+
 //@Override this after building a getArea() in Quadrilateral superclass
 	public double getArea()
 		{
@@ -21,14 +22,6 @@ public class Trapezoid extends Quadrilateral
 			setHeight();
 		 return ((getTopBase() + getBase()) / 2) * getHeight();
 		}
-
-	/*@Override
-	public String toString()
-		{
-		return "Trapezoid instance:\n" + this.getClass() + ": " + getCorner1() + ", " + getCorner2() + ", " +
-				       getCorner3() + ", " + getCorner4();
-		}*/
-
 
 
 	}

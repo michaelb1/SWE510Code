@@ -18,16 +18,18 @@ public class Square extends Rectangle
 		return getBase() * getBase();
 		}
 
-	/*@Override
+	@Override
 	  public String toString()
 		{
+		String shapeOne = this.getClass().getSimpleName();
+		String shapeTwo = this.getClass().getSuperclass().getSimpleName();
+		String shapeThree = this.getClass().getSuperclass().getSuperclass().getSimpleName();
+		String shapeFour = this.getClass().getSuperclass().getSuperclass().getSuperclass().getSimpleName();
+		String fourPoints = "Corners: " + getCorner1() + ", " + getCorner2() + ", " + getCorner3() + "," + "," + getCorner4();
+		return  shapeOne + ", subclass of " + shapeTwo + "-->" + shapeThree + "-->" + shapeFour + "" +
+				        ".\nCorners: "
+          + getCorner1() + ", " + getCorner2() + ", " + getCorner3() + "," + "," + getCorner4();
 
-		return "This is a " + shapeOne + ".\n" +
-				       shapeOne + " is a " + shapeTwo +
-				       "-->" + ShapeThree + "-->" +
-				       ShapeFour +
-				       ".\nCorners: " +
-				       getCorner1() + ", " + getCorner2() + ", " + getCorner3() + "," + "," + getCorner4();
 		}
-		*/
-	}
+}
+

@@ -22,14 +22,5 @@ public class Parallelogram extends Quadrilateral
 		}
 
 
-	/*@Override
-	public String toString()
-		{
-		return getClass().getSuperclass() + ".\nCorners: " + getCorner1() + ", " +
-				       getCorner2() +
-				       ", " +
-				       getCorner3() + "," +
-				       " " +
-				       getCorner4();
-		}*/
+
 	}
