@@ -34,10 +34,10 @@ public class Square extends Rectangle
 		String shapeTwo = this.getClass().getSuperclass().getSimpleName();
 		String shapeThree = this.getClass().getSuperclass().getSuperclass().getSimpleName();
 		String shapeFour = this.getClass().getSuperclass().getSuperclass().getSuperclass().getSimpleName();
-		String fourPoints = "Corners: " + getCorner1() + ", " + getCorner2() + ", " + getCorner3() + "," + "," + getCorner4();
-		return  shapeOne + ", subclass of " + shapeTwo + "-->" + shapeThree + "-->" + shapeFour + "" +
-				        ".\nCorners: "
-          + getCorner1() + ", " + getCorner2() + ", " + getCorner3() + "," + "," + getCorner4();
+		String fourPoints = "Corners: " + getCorner1() + ", " + getCorner2() + ", " + getCorner3() + "," + getCorner4();
+		return shapeOne + ", subclass of " + shapeTwo + "-->" + shapeThree + "-->" + shapeFour + "" +
+				        ".\n" + fourPoints;
+		//+ getCorner1() + ", " + getCorner2() + ", " + getCorner3() + "," + "," + getCorner4();
 
 		}
 }

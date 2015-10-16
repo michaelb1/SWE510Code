@@ -26,11 +26,8 @@ public class Rectangle extends Parallelogram
 		String shapeOne = this.getClass().getSimpleName();
 		String shapeTwo = this.getClass().getSuperclass().getSimpleName();
 		String shapeThree = this.getClass().getSuperclass().getSuperclass().getSimpleName();
-		String fourPoints = "Corners: " + getCorner1() + ", " + getCorner2() + ", " + getCorner3() + "," + "," + getCorner4();
-		return  shapeOne + ", subclass of " + shapeTwo + "-->" + shapeThree +
-				        ".\nCorners: "
-				        + getCorner1() + ", " + getCorner2() + ", " + getCorner3() + "," + "," + getCorner4();
-
+		String fourPoints = "Corners: " + getCorner1() + ", " + getCorner2() + ", " + getCorner3() + "," + getCorner4();
+		return  shapeOne + ", subclass of " + shapeTwo + "-->" + shapeThree + ".\n" + fourPoints;
 		}
 }
 
