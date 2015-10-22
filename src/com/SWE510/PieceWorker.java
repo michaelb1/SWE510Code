@@ -44,8 +44,8 @@ public class PieceWorker extends Employee
 	// return String representation of PieceWorker object
 	@Override
 	public String toString()
-		{
-		return String.format("%s: %s%n%s:%s; %s: $%.2f ",
+		{  //mod text coming from Employee toString method to then add on data about pieces and wages
+		return String.format("%s: %s%n%s:%s%n%s:$%.2f ",
 		                     "PieceWorker employee", super.toString(),
 		                     "Pieces produced", getPieces(),
 		                     "Wage per piece", getWage());
