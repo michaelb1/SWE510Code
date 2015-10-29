@@ -2,15 +2,9 @@ package com.SWE510;
 
 /**
  * Created by mb on 10/22/15.
- * include an additional employee subclass Pieceworker that represents an employee whose
- * pay is based on the number of pieces of merchandise produced.
- * Pieceworker should contain private instance variables
- * -'wage' (to store wage per piece)
- * -'pieces' to store number of pieces produced.
- * -Provide concrete implementation of of method 'earnings' in Pieceworker that calcs employee earnings by multiplying
- * pieces produced by wage per piece.
- * -create an array of 'Employee' variables to store references to objects of each concrete class in new 'Employee' hierarchy.
- * -for each 'Employee' display its String representation and earning.
+ *This driver class creates data about 1 employee from each type (subclass) of
+ * Employee including the newly created PieceWorker type. It stores this data in an array and then prints out each
+ * employee's information to the console.
  */
 public class Assign7Driver
 	{
@@ -18,9 +12,9 @@ public class Assign7Driver
 	public static void main(String[] args)
 		{
 		// Instantiate concrete Employee subclass objects
-		SalariedEmployee salariedEmp = new SalariedEmployee("Walter", "White", "111-11-1111", 1000.00);
+		SalariedEmployee salariedEmp = new SalariedEmployee("Walter", "White", "123-45-6789", 1000.00);
 
-		HourlyEmployee hourlyEmp = new HourlyEmployee("Emma", "Watson", "222-22-2222", 7.75, 40);
+		HourlyEmployee hourlyEmp = new HourlyEmployee("Emma", "Watson", "987-65-4321", 7.75, 40);
 
 		CommissionEmployee commissionEmp = new CommissionEmployee("Earnest", "Hemingway", "333-33-3333", 200000, .06);
 
@@ -31,18 +25,18 @@ public class Assign7Driver
 
 
 		Employee[] employees = new Employee[5];
-		//superclass array holding subclass objects
+		//superclass array holding references to subclass objects
 		employees[0] = salariedEmp;
 		employees[1] = hourlyEmp;
 		employees[2] = commissionEmp;
 		employees[3] = baseplusCommEmp;
 		employees[4] = pieceEmp;
 
-		//loop to go through superclass array and run subclass methods depending on
-		//object
+		//loop to go through superclass array and run specific subclass methods for each
 		for (Employee currentEmployee : employees)
 		{
-			System.out.println(currentEmployee); // call each array elements subclass toString
+			// call each array elements subclass toString
+			System.out.println(currentEmployee);
 			//add on earnings
 			System.out.printf("Earnings: $%.2f%n%n", currentEmployee.earnings());
 		}
