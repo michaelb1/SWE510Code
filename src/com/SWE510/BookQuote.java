@@ -37,7 +37,6 @@ public class BookQuote
 		return quote;
 		}
 
-
 	public int getPage()
 		{
 		return page;
