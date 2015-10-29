@@ -1,5 +1,7 @@
 package com.SWE510;
 
+import java.awt.print.Book;
+
 /**pre- and post-conditions are mandatory for all classes but Demo3
  * Shows a constructor passing information about constructor failure to an exception handler. Define class SomeClass,
  *  which throws an exception in the constructor. Your program should try to create an object of type SomeClass and
@@ -14,59 +16,53 @@ public class SomeClass
 		 So, a precondition would be money > 0.
 		 */
 	private String bookName;
-	private int isbn;
-	private short bookLength;
-
-	public String getBestQuote()
-		{
-		return bestQuote;
-		}
-
-	private String bestQuote;
+	private String isbn;
+	private int bookLength;
+	private BookQuote quote;
 
 
 	// constructor
-	public SomeClass(String bookName, int isbn, short bookLength, String bestQuote)
+	public SomeClass(String bookName, String isbn, int bookLength, String quote)
 		{
 		this.bookName = bookName;
 		this.isbn = isbn;
 		this.bookLength = bookLength;
-		this.bestQuote = bestQuote;
+		this.quote = new BookQuote(quote);
 		}
 
 	@Override
 	public String toString()
 		{
-		return String.format("%s %s%nsocial security number: %s",
-		                     getBookName(), getIsbn(), getBookLength());
+		return String.format("Book: %s%nISBN: %s%nPages: %s%nBest Quote: %n%s%n%n",
+		                     bookName, isbn, bookLength,quote);
 		}
+
 	public String getBookName()
 		{
 		return bookName;
 		}
 
-	public void setBookName(String bookName)
-		{
-		this.bookName = bookName;
-		}
 
-	public int getIsbn()
+
+	public String getIsbn()
 		{
 		return isbn;
 		}
 
-	public void setIsbn(int isbn)
-		{
-		this.isbn = isbn;
-		}
 
-	public short getBookLength()
+	public int getBookLength()
 		{
 		return bookLength;
 		}
 
-	public void setBookLength(short bookLength)
+	public void setBookLength(int bookLength)
 		{
 		this.bookLength = bookLength;
 		}
+
+	public BookQuote getQuote()
+		{
+		return this.quote;
+		}
 	}
+

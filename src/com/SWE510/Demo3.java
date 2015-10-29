@@ -9,6 +9,11 @@ public class Demo3
 	{
 	public static void main (String[] args)
 		{
-		SomeClass myNewObject = new SomeClass("")
+		SomeClass bookObject;
+		bookObject = new SomeClass("The Goldfinch", "9780316055444", 775, "It used to be a perfectly ordinary day but now it sticks up on the calendar like a rusty nail.");
+
+		System.out.print(bookObject);
+		//System.out.printf("from main using bookObject.getQuote" + bookObject.getQuote() + "\n");
+
 		}
 	}

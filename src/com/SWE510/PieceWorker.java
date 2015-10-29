@@ -1,16 +1,8 @@
 package com.SWE510;
 
 /**
- * Created by mb on 10/22/15.
- * * include an additional employee subclass Pieceworker that represents an employee whose
+ * Created by mb on 10/22/15. Employee subclass Pieceworker represents an employee whose
  * pay is based on the number of pieces of merchandise produced.
- Pieceworker should contain private instance variables
- -'wage' (to store wage per piece)
- -'pieces' to store number of pieces produced.
- -Provide concrete implementation of of method 'earnings' in Pieceworker that calcs employee earnings by multiplying
- pieces produced by wage per piece.
- -create an array of 'Employee' variables to store references to objects of each concrete class in new 'Employee' hierarchy.
- -for each 'Employee' display its String representation and earning.
  */
 public class PieceWorker extends Employee
 	{
