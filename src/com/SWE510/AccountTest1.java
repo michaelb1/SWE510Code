@@ -6,13 +6,13 @@ import java.util.Scanner;
 /**
  * Created by mb on 9/10/15.
  */
-public class AccountTest {
+public class AccountTest1 {
 
 public static void main(String[] args){
 
 
 
-        Account myAccount = new Account();
+        Account1 myAccount = new Account1();
 
         myAccount.setName("Mike");
 

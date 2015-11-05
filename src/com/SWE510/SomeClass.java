@@ -15,8 +15,7 @@ public class SomeClass
 	private String bookName;
 	private String isbn;
 	private int bookLength;
-	private BookQuote quote;
-
+	private String quote;
 
 	/**
 	 * constructor Pre-condition arguments passed in  must be the correct type. Booklenth must be greater than 0.
@@ -24,7 +23,6 @@ public class SomeClass
 	 * @param bookName   the book name
 	 * @param isbn       the isbn
 	 * @param bookLength the book length
-	 * @param quote      the quote
 	 * @throws InputMismatchException the input mismatch exception
 	 */
 	public SomeClass(String bookName, String isbn, int bookLength, String quote) throws InputMismatchException
@@ -37,7 +35,7 @@ public class SomeClass
 		this.bookName = bookName;
 		this.isbn = isbn;
 		this.bookLength = bookLength;
-		this.quote = new BookQuote(quote);
+		this.quote = quote;
 		}
 	/**constructor post-condition: Method will provide a new object of type SomeClass that holds variables with
 	 * getter and setter methods.
@@ -71,65 +69,17 @@ public class SomeClass
 		return isbn;
 		}
 
+	public String getQuote()
+		{
+		return quote;
+		}
 
-	/**
-	 * Gets book length.
-	 *
-	 * @return the book length
-	 */
 	public int getBookLength()
 		{
 		return bookLength;
 		}
 
-	/**
-	 * Sets book length.
-	 *
-	 * @param bookLength the book length
-	 */
-	public void setBookLength(int bookLength)
-		{
-		this.bookLength = bookLength;
-		}
 
-	/**
-	 * Gets quote.
-	 *
-	 * @return the quote
-	 */
-	public BookQuote getQuote()
-		{
-		return this.quote;
-		}
 
-	/**
-	 * Sets book name.
-	 *
-	 * @param bookName the book name
-	 */
-	public void setBookName(String bookName)
-		{
-		this.bookName = bookName;
-		}
-
-	/**
-	 * Sets isbn.
-	 *
-	 * @param isbn the isbn
-	 */
-	public void setIsbn(String isbn)
-		{
-		this.isbn = isbn;
-		}
-
-	/**
-	 * Sets quote.
-	 *
-	 * @param quote the quote
-	 */
-	public void setQuote(BookQuote quote)
-		{
-		this.quote = quote;
-		}
 	}
 

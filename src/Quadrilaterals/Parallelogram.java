@@ -12,7 +12,7 @@ public class Parallelogram extends Quadrilateral
 	/**
 	 * Instantiates a new Parallelogram.
 	 */
-	public  Parallelogram(){};
+	public  Parallelogram(){}
 
 	/**
 	 * Instantiates a new Parallelogram.

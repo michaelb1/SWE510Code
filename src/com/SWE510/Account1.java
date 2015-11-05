@@ -4,7 +4,7 @@ package com.SWE510;
 /**
  * Created by mb on 9/10/15.
  */
-public class Account {
+public class Account1 {
 
         private String name; //instance variable (outside a method)
 
