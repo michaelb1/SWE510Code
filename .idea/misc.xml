@@ -4,7 +4,7 @@
     <entry_points version="2.0" />
   </component>
   <component name="JavadocGenerationManager">
-    <option name="OUTPUT_DIRECTORY" value="$USER_HOME$/Google Drive/1GMU_Current Semester/4SWE510IntrotoProgramming/HW archive/HW8JavaDoc" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../HW archive/BrashierHW9JavaDocs" />
     <option name="OPTION_SCOPE" value="private" />
     <option name="OPTION_HIERARCHY" value="true" />
     <option name="OPTION_NAVIGATOR" value="true" />
