@@ -25,13 +25,33 @@ public class BubbleSort
 			// display array
 			System.out.printf("Non-sorted data:%n");
 			//BubbleSort.printArray(testData);
+			printArray(testData);
 
 			//}
 
 			BubbleSortTest mySort = new BubbleSortTest(testData);
 
+			System.out.printf("Bubble sorted array: %n");
+
+			printArray(testData);
 			System.out.println(mySort);
 
 			}
+	public static void printArray(int[] data)
+		{
+		int last = data.length;
+
+		for (int b=1; b<=last; b++)
+		{
+			if (b % 10 != 0){
+				System.out.print(data[b-1]+",");
+			}
+			else{
+				System.out.println(data[b-1]);
+			}
+		}
+		System.out.println();
+
+		}
 
 	}

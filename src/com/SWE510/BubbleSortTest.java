@@ -29,8 +29,7 @@ public class BubbleSortTest
 		}
 
 // display array
-		System.out.printf("Bubble sorted array: %s%n%n", Arrays.toString(data));
-		this.printArray();
+		//System.out.printf("Bubble sorted array: %s%n%n", Arrays.toString(data));
 		}
 
 
@@ -40,10 +39,9 @@ public class BubbleSortTest
 	@Override
 	public String toString()
 		{
-	return 	"Bubble sorted arrays are O(n^2) because the inner loop runs though every array index the first time, " +
-			          "then " +
-			          "n-1, n-2, etc. " +
-			          "While the outer loop also runs thorough every array index, so the total work is O(n^2).";
+	return 	"Bubble sorted arrays are O(n^2) because the inner loop \n runs though every array index the first time,\n" +
+			          " then n-1, n-2, etc. While the outer loop also \nruns thorough every array index, so the total \n" +
+			          "work is O(n^2).";
 
 	}
 
