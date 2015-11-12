@@ -1,69 +1,49 @@
 package com.SWE510;
 
-import java.sql.Array;
-import java.util.Arrays;
+import java.security.SecureRandom;
 
 /**
- * Created by mb on 11/9/15.
+ * Created by mb on 11/9/15. This class tests the BubbleSort object by generating an array of random numbers
+ * and creating a BubbleSort object to send the random array to.
+ * Some information about the array and bubble sort is calucalted and returned to the user.
  */
 public class BubbleSortTest
 	{
-
-	public BubbleSortTest(int[] data)
+	public static void main(String[] args)
 		{
-		int last = data.length;
-		int temp;
-//start of bubble sorting.
-		for(int a = 0; a < last; a++)
-		{   //start at first Array index, end at end of array
-			for (int b = 1; b < (last - a); b++)
-			{//Compare data[0] & data[1], data[1] & data[2]...
-				if (data[b - 1] > data[b])
-				{
-					//swap function
-					temp = data[b - 1];
-					data[b - 1] = data[b];
-					data[b] = temp;
-				}
-			}
+		//create a 100 element array
+		int[] testData = new int[50]; // create array
+		SecureRandom numbergen = new SecureRandom();
+		int length = testData.length;
+
+
+		// fill array with 100 random numbers
+		for (int i = 0; i < testData.length; i++)
+		{
+			testData[i] = 1 + numbergen.nextInt(50);
 		}
 
-// display array
-		//System.out.printf("Bubble sorted array: %s%n%n", Arrays.toString(data));
+		// display random unsorted array
+		System.out.printf(length + " index array of random unsorted numbers:%n");
+
+		BubbleSort.printArray(testData);
+
+		//creat new BubbleSort object and pass in the unsorted random array
+		BubbleSort mySort = new BubbleSort(testData);
+
+		System.out.printf("The same array bubble-sorted: %n");
+		BubbleSort.printArray(testData);
+
+		//Print out some stats about the bubble array instance that just ran
+		System.out.println("Array length: " + mySort.getLast());
+		System.out.println("Outer loop: " + mySort.getOutercount() + " times.");
+		System.out.println("Inner loop: " + mySort.getInnercount() + " times.");
+		System.out.println(("Number of times index values swapped:" + mySort.getSwapcount()));
+		System.out.println("Total loops:" + mySort.getOutercount()*mySort.getInnercount()+ "\n");
+
+		//call toString on object
+		System.out.println(mySort);
+
 		}
-
-
-	//public static void BubbleSortTest(int[] data)
-
-
-	@Override
-	public String toString()
-		{
-	return 	"Bubble sorted arrays are O(n^2) because the inner loop \n runs though every array index the first time,\n" +
-			          " then n-1, n-2, etc. While the outer loop also \nruns thorough every array index, so the total \n" +
-			          "work is O(n^2).";
 
 	}
-
-
-}
-/*
-					* In bubble sort, we basically traverse the array from first
-					* to array_length - 1 position and compare the element with the next one.
-					* Element is swapped with the next element if the next element is greater.
-					*
-					* Bubble sort steps are as follows.
-					*
-					* 1. Compare array[0] & array[1]
-					* 2. If array[0] > array [1] swap it.
-					* 3. Compare array[1] & array[2]
-					* 4. If array[1] > array[2] swap it.
-					* ...
-					* 5. Compare array[n-1] & array[n]
-					* 6. if [n-1] > array[n] then swap it.
-					*
-					* After this step we will have largest element at the last index.
-					*
-					* Repeat the same steps for array[1] to array[n-1]
-					*
-					*/
