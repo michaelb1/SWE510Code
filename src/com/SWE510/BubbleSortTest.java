@@ -12,7 +12,7 @@ public class BubbleSortTest
 	public static void main(String[] args)
 		{
 		//create a 100 element array
-		int[] testData = new int[50]; // create array
+		int[] testData = new int[100]; // create array
 		SecureRandom numbergen = new SecureRandom();
 		int length = testData.length;
 

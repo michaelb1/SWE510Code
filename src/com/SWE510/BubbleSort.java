@@ -18,11 +18,13 @@ public class BubbleSort
 		int temp;
 
 //start of bubble sorting.
-		for (int a = 0; a < last - a; a++) {
+		for (int a = 0; a < last; a++) {
 			//start at first Array index, end at last index of array
 			for (int b = 1; b < (last - a); b++)
-			{//Compare data[0] & data[1], data[1] & data[2]...
-				if (data[b - 1] > data[b]) {
+
+			{ //Compare data[0] & data[1], data[1] & data[2]...
+				if (data[b-1] > data[b])
+				{
 					//swap function
 					temp = data[b - 1];
 					data[b - 1] = data[b];
